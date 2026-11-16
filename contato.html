@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a FitLife ou faça sua pré-matrícula para ganhar uma aula experimental gratuita!">
+  <title>Matrícula & Contato | FitLife Academia</title>
+  
+  <!-- Favicon Personalizado -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="Página Inicial FitLife">
+        <img src="assets/favicon.svg" alt="Ícone FitLife" class="logo-icon-img">
+        <span class="logo-brand">Fit<span class="logo-highlight">Life</span></span>
+      </a>
+
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="planos.html" class="nav-link">Planos & Aulas</a></li>
+          <li><a href="contato.html" class="nav-link active">Matrícula & Contato</a></li>
+          <li><a href="#duvidas-frequentes" class="nav-link">Dúvidas (FAQ)</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Alternar tema claro/escuro">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <span>Escuro</span>
+        </button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="section-title-wrap">
+      <span class="badge badge-primary">Fale Conosco</span>
+      <h1>Agende sua Aula Experimental ou Tire Dúvidas</h1>
+      <p>Preencha os campos abaixo. Nossa equipe entrará em contato via WhatsApp em até 30 minutos.</p>
+    </div>
+
+    <!-- LAYOUT EM 2 COLUNAS (CSS GRID) -->
+    <div class="contact-layout">
+      <!-- COLUNA DA ESQUERDA: INFORMAÇÕES E FAQ (LISTA ORDENADA) -->
+      <aside class="contact-info">
+        <h3>Nossos Canais</h3>
+        <p>Estamos prontos para atender você pessoalmente ou pelos canais digitais.</p>
+
+        <div class="info-item">
+          <div class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div>
+            <strong>Unidade Principal (Campus La Salle):</strong>
+            <p>Rua Gastão Gonçalves, 79 - Santa Rosa, Niterói - RJ<br><small style="color: var(--primary-color); font-weight: 600;">(Em frente ao Centro Universitário UniLaSalle - RJ)</small></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div>
+            <strong>Telefone / WhatsApp:</strong>
+            <p>(21) 98765-4321 / (21) 2719-8000</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <div>
+            <strong>Horário de Funcionamento:</strong>
+            <p>Seg a Sex: 06h às 23h<br>Sábados e Feriados: 08h às 18h<br>Domingos: 09h às 14h</p>
+          </div>
+        </div>
+
+        <!-- Atalhos rápidos para as Dúvidas Comuns -->
+        <h4 style="margin-top: 2rem;">Dúvidas Mais Comuns:</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 0.75rem;">Clique para ir direto à resposta detalhada:</p>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+          <a href="#faq-experimental" class="faq-chip" style="justify-content: flex-start;">
+            <svg viewBox="0 0 24 24"><path d="M6 5v14M18 5v14M3 9v6M21 9v6M6 12h12"></path></svg>
+            <span>Preciso agendar a aula grátis?</span>
+          </a>
+          <a href="#faq-pagamento" class="faq-chip" style="justify-content: flex-start;">
+            <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+            <span>Quais as formas de pagamento?</span>
+          </a>
+          <a href="#faq-cancelamento" class="faq-chip" style="justify-content: flex-start;">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+            <span>Como funciona o cancelamento?</span>
+          </a>
+          <a href="#faq-primeiro-dia" class="faq-chip" style="justify-content: flex-start;">
+            <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span>O que levar no 1º dia de treino?</span>
+          </a>
+          <a href="#faq-atestado" class="faq-chip" style="justify-content: flex-start;">
+            <svg viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+            <span>Preciso de atestado médico?</span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- COLUNA DA DIREITA: FORMULÁRIO COM VALIDAÇÃO JAVASCRIPT -->
+      <section class="contact-form-card">
+        <h3>Formulário de Pré-Matrícula</h3>
+        <p>Os campos marcados com <span style="color: #ef4444;">*</span> são de preenchimento obrigatório.</p>
+
+        <form id="formContato" novalidate>
+          <div class="form-group">
+            <label for="nome">Nome Completo <span class="req">*</span></label>
+            <input type="text" id="nome" class="form-control" placeholder="Digite seu nome completo" required>
+            <div id="erro-nome" class="error-message"></div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-mail <span class="req">*</span></label>
+              <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+              <div id="erro-email" class="error-message"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">WhatsApp / Telefone <span class="req">*</span></label>
+              <input type="tel" id="telefone" class="form-control" placeholder="(21) 99999-9999" maxlength="15" required>
+              <div id="erro-telefone" class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="unidade">Unidade Mais Próxima <span class="req">*</span></label>
+              <select id="unidade" class="form-control" required>
+                <option value="">Selecione uma filial...</option>
+                <option value="unilasalle" selected>Unidade Niterói (Campus UniLaSalle - Santa Rosa)</option>
+                <option value="icarai">Unidade Niterói - Icaraí</option>
+                <option value="centro-rio">Unidade Rio de Janeiro - Centro</option>
+                <option value="barra">Unidade Rio de Janeiro - Barra da Tijuca</option>
+              </select>
+              <div id="erro-unidade" class="error-message"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="plano">Plano de Interesse <span class="req">*</span></label>
+              <select id="plano" class="form-control" required>
+                <option value="">Selecione um plano...</option>
+                <option value="experimental">Aula Experimental Gratuita (1 Dia)</option>
+                <option value="basic">Plano Basic (R$ 89,90/mês)</option>
+                <option value="fit">Plano Fit (R$ 119,90/mês)</option>
+                <option value="vip">Plano Black VIP (R$ 169,90/mês)</option>
+              </select>
+              <div id="erro-plano" class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Observações ou Metas de Saúde (Opcional):</label>
+            <textarea id="mensagem" class="form-control" rows="4" placeholder="Ex: Gostaria de focar em hipertrofia e melhorar condicionamento cardiovascular..."></textarea>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="termos" required>
+            <label for="termos">
+              Concordo em receber contato da equipe FitLife para agendamento e informações sobre os planos. <span class="req">*</span>
+            </label>
+          </div>
+          <div id="erro-termos" class="error-message" style="margin-top: -1rem; margin-bottom: 1rem;"></div>
+
+          <button type="submit" id="btnEnviar" class="btn btn-primary" style="width: 100%;">
+            Finalizar e Enviar Solicitação
+          </button>
+        </form>
+
+        <!-- CARD DE SUCESSO DINÂMICO GERADO POR JAVASCRIPT -->
+        <div id="successCard" class="success-card" aria-live="polite">
+          <h4>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:-3px; margin-right:6px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            Solicitação Enviada com Sucesso!
+          </h4>
+          <p>Recebemos seus dados e geramos o seguinte protocolo de atendimento:</p>
+          <div id="submissionSummary" style="background: var(--card-bg); padding: 1rem; border-radius: var(--radius-md); margin-top: 1rem; text-align: left; font-size: 0.9rem; border: 1px solid var(--border-color);"></div>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">Um de nossos consultores entrará em contato em breve pelo WhatsApp fornecido.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- SEÇÃO DE LOCALIZAÇÃO (MAPA INTERATIVO DO GOOGLE MAPS - UNILASALLE RJ) -->
+    <section class="map-section" id="localizacao">
+      <div class="section-title-wrap">
+        <span class="badge badge-primary">Localização Privilegiada</span>
+        <h2>Nossa Unidade Principal</h2>
+        <p>Venha conhecer nossa estrutura no bairro de Santa Rosa, Niterói - RJ, ao lado do Centro Universitário UniLaSalle.</p>
+      </div>
+
+      <div class="map-card">
+        <div class="map-header">
+          <div class="map-header-info">
+            <h3>FitLife — Unidade Campus UniLaSalle RJ</h3>
+            <p style="margin-bottom: 0;">Rua Gastão Gonçalves, 79 - Santa Rosa, Niterói - RJ, CEP: 24240-030</p>
+          </div>
+          <a href="https://maps.google.com/?q=UniLaSalle+RJ+Rua+Gastao+Goncalves+79+Niteroi+RJ" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-secondary" 
+             style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.2rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+            <span>Abrir Rotas no Google Maps</span>
+          </a>
+        </div>
+
+        <!-- Tag iframe oficial do Google Maps (incorporação padrão ensinada na disciplina) -->
+        <div class="map-container">
+          <iframe 
+            title="Mapa de Localização da FitLife na UniLaSalle RJ"
+            src="https://maps.google.com/maps?q=UniLaSalle%20RJ%20Rua%20Gast%C3%A3o%20Gon%C3%A7alves%2079%20Niteroi%20RJ&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Informações complementares de acesso -->
+        <div class="map-details-grid">
+          <div class="map-detail-item">
+            <div class="map-detail-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="15" rx="2"></rect><circle cx="7.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle><line x1="3" y1="11" x2="21" y2="11"></line></svg>
+            </div>
+            <div>
+              <strong>Transporte Público</strong>
+              <p>Linhas municipais de Niterói (linhas 30, 39, 40 e 57) com ponto em frente ao campus.</p>
+            </div>
+          </div>
+
+          <div class="map-detail-item">
+            <div class="map-detail-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"></rect><path d="M9 17V7h4a3 3 0 0 1 0 6H9"></path></svg>
+            </div>
+            <div>
+              <strong>Estacionamento</strong>
+              <p>Estacionamento conveniado no local para alunos com até 2 horas de gratuidade.</p>
+            </div>
+          </div>
+
+          <div class="map-detail-item">
+            <div class="map-detail-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="4" r="2"></circle><path d="M19 13v-2a4 4 0 0 0-4-4h-4a4 4 0 0 0-4 4v7"></path><path d="M9 17a4 4 0 1 0 4 4"></path><path d="M13 13l2 4 4-2"></path></svg>
+            </div>
+            <div>
+              <strong>Acessibilidade Plena</strong>
+              <p>Rampas de acesso, elevador panorâmico e vestiários 100% adaptados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DEDICADA DE PERGUNTAS FREQUENTES (FAQ COM ACCORDION & NAVEGAÇÃO SUAVE) -->
+    <section id="duvidas-frequentes" class="faq-section">
+      <div class="section-title-wrap">
+        <span class="badge badge-warning">Tire Suas Dúvidas</span>
+        <h2>Perguntas Frequentes</h2>
+        <p>Clique em qualquer dúvida abaixo para ir direto à resposta detalhada com explicação e orientações completas.</p>
+      </div>
+
+      <!-- Barra de Navegação Rápida com Chips / Dúvidas em Destaque -->
+      <nav class="faq-quick-nav" aria-label="Atalhos para Dúvidas Comuns">
+        <a href="#faq-experimental" class="faq-chip">
+          <svg viewBox="0 0 24 24"><path d="M6 5v14M18 5v14M3 9v6M21 9v6M6 12h12"></path></svg>
+          <span>Aula Gratuita</span>
+        </a>
+        <a href="#faq-pagamento" class="faq-chip">
+          <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+          <span>Formas de Pagamento</span>
+        </a>
+        <a href="#faq-cancelamento" class="faq-chip">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+          <span>Cancelamento & Fidelidade</span>
+        </a>
+        <a href="#faq-primeiro-dia" class="faq-chip">
+          <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span>O que levar no 1º dia</span>
+        </a>
+        <a href="#faq-atestado" class="faq-chip">
+          <svg viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+          <span>Atestado Médico</span>
+        </a>
+        <a href="#faq-amigo" class="faq-chip">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          <span>Levar Amigo (VIP)</span>
+        </a>
+        <a href="#faq-horarios" class="faq-chip">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>Finais de Semana & Feriados</span>
+        </a>
+      </nav>
+        <a href="#faq-horarios" class="faq-chip">⏰ Finais de Semana & Feriados</a>
+      </nav>
+
+      <!-- Lista Ordenada Interativa (Accordion) -->
+      <ol class="faq-accordion-list" aria-label="Lista de Perguntas Frequentes">
+        <!-- Pergunta 1: Aula Experimental -->
+        <li class="faq-item" id="faq-experimental">
+          <button class="faq-trigger" type="button" aria-expanded="false">
+            <span>Como funciona a aula experimental gratuita?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p><strong>A aula experimental é 100% gratuita e sem compromisso!</strong> Basta preencher o formulário acima selecionando a opção <em>"Aula Experimental Gratuita"</em>.</p>
+            <p>Nossa equipe entrará em contato via WhatsApp para confirmar o melhor horário. Ao chegar à academia, você será recepcionado por um instrutor que apresentará todos os espaços, aparelhos e acompanhará sua rotina de treino introdutória.</p>
+          </div>
+        </li>
+
+        <!-- Pergunta 2: Formas de Pagamento -->
+        <li class="faq-item" id="faq-pagamento">
+          <button class="faq-trigger" type="button" aria-expanded="false">
+            <span>Quais são as formas de pagamento aceitas e há taxa de matrícula?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Aceitamos <strong>Cartão de Crédito com Débito Recorrente</strong> (que <em>não consome</em> o limite total do seu cartão, apenas a mensalidade do mês), <strong>PIX</strong> e <strong>Boleto Bancário</strong>.</p>
+            <p>A taxa de matrícula é <strong>totalmente grátis</strong> para todas as inscrições realizadas através deste portal web.</p>
+          </div>
+        </li>
+
+        <!-- Pergunta 3: Cancelamento -->
+        <li class="faq-item" id="faq-cancelamento">
+          <button class="faq-trigger" type="button" aria-expanded="false">
+            <span>Existe período de fidelidade ou multa por cancelamento?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Na FitLife prezamos pela sua liberdade e confiança: nossos planos não possuem contratos com multas abusivas.</p>
+            <p>Você pode solicitar o cancelamento ou o <strong>trancamento temporário de matrícula por até 60 dias</strong> (ideal para viagens ou cirurgias) com apenas 30 dias de antecedência na recepção ou via formulário online.</p>
+          </div>
+        </li>
+
+        <!-- Pergunta 4: Primeiro Dia -->
+        <li class="faq-item" id="faq-primeiro-dia">
+          <button class="faq-trigger" type="button" aria-expanded="false">
+            <span>O que devo levar e como devo me vestir no meu primeiro dia?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Recomendamos trajes esportivos leves e confortáveis (como bermuda, legging, camiseta dry-fit) e calçado esportivo apropriado com solado estável.</p>
+            <p><strong>Itens recomendados na mochila:</strong></p>
+            <ul style="padding-left: 1.5rem; margin-top: 0.4rem; color: var(--text-muted);">
+              <li>Garrafinha de água para hidratação contínua;</li>
+              <li>Toalha de treino de uso pessoal;</li>
+              <li>Cadeado de segurança pequeno para os armários privativos do vestiário.</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Pergunta 5: Atestado Médico -->
+        <li class="faq-item" id="faq-atestado">
+          <button class="faq-trigger" type="button" aria-expanded="false">
+            <span>É obrigatório apresentar atestado médico para começar a treinar?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>No ato da matrícula, você responderá ao questionário <strong>PAR-Q (Questionário de Prontidão para Atividade Física)</strong> conforme a legislação vigente.</p>
+            <p>Caso você assinale alguma condição pré-existente ou tenha mais de 60 anos, solicitamos um atestado médico emitido nos últimos 12 meses para garantir total segurança durante os exercícios.</p>
+          </div>
+        </li>
+
+        <!-- Pergunta 6: Amigo no Plano VIP -->
+        <li class="faq-item" id="faq-amigo">
+          <button class="faq-trigger" type="button" aria-expanded="false">
+            <span>Como funciona o benefício de levar um amigo no Plano Black VIP?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Alunos do <strong>Plano Black VIP</strong> têm o direito exclusivo de convidar 1 amigo para treinar junto até <strong>4 vezes por mês</strong> (1 vez a cada semana).</p>
+            <p>O amigo tem acesso livre à área de musculação e esteiras no mesmo dia que você, sem nenhum custo extra. Basta apresentar documento com foto na recepção.</p>
+          </div>
+        </li>
+
+        <!-- Pergunta 7: Horários em Feriados -->
+        <li class="faq-item" id="faq-horarios">
+          <button class="faq-trigger" type="button" aria-expanded="false">
+            <span>A academia abre aos sábados, domingos e feriados?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p><strong>Sim!</strong> Nossas unidades operam em horários estendidos nos finais de semana:</p>
+            <p>• <strong>Sábados e Feriados:</strong> das 08h às 18h.<br>
+               • <strong>Domingos:</strong> das 09h às 14h.</p>
+            <p>Você pode consultar a grade de aulas coletivas do sábado e domingo diretamente na página <a href="planos.html" style="font-weight: 600; text-decoration: underline;">Planos & Horários</a>.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 1rem;" aria-label="FitLife">
+            <img src="assets/favicon.svg" alt="Ícone FitLife" class="logo-icon-img">
+            <span class="logo-brand">Fit<span class="logo-highlight">Life</span></span>
+          </a>
+          <p>Projeto acadêmico com formulário validado em tempo real por scripts JavaScript e layout responsivo.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="planos.html">Planos & Grade</a></li>
+            <li><a href="contato.html">Matrícula & Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Dúvidas Comuns</h4>
+          <ul class="footer-links">
+            <li><a href="#faq-pagamento">Formas de Pagamento</a></li>
+            <li><a href="#faq-cancelamento">Cancelamento e Regras</a></li>
+            <li><a href="#faq-experimental">Aula Experimental Grátis</a></li>
+            <li><a href="#faq-atestado">Atestado Médico</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:contato@fitlifeacademia.com">contato@fitlifeacademia.com</a></li>
+            <li><a href="tel:11987654321">(11) 98765-4321</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Dados do Projeto</h4>
+          <p><strong>Disciplina:</strong> Desenvolvimento Web</p>
+          <p><strong>Trabalho:</strong> Desenvolvimento de Site em Dupla</p>
+          <p><strong>Tecnologias:</strong> HTML5, CSS3 & JavaScript</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> FitLife Academia. Todos os direitos reservados.</p>
+        <p>Desenvolvido com carinho para o Trabalho Prático de Desenvolvimento de Site.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/contato.js"></script>
+</body>
+</html>

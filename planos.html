@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Confira nossos planos e a grade completa de horários de aulas na FitLife.">
+  <title>Planos & Horários | FitLife Academia</title>
+  
+  <!-- Favicon Personalizado -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO E NAVEGAÇÃO -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="Página Inicial FitLife">
+        <img src="assets/favicon.svg" alt="Ícone FitLife" class="logo-icon-img">
+        <span class="logo-brand">Fit<span class="logo-highlight">Life</span></span>
+      </a>
+
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="planos.html" class="nav-link active">Planos & Aulas</a></li>
+          <li><a href="contato.html" class="nav-link">Matrícula & Contato</a></li>
+          <li><a href="contato.html#duvidas-frequentes" class="nav-link">Dúvidas (FAQ)</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Alternar tema claro/escuro">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <span>Escuro</span>
+        </button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- SEÇÃO 1: COMPARATIVO DE PLANOS (TABELA HTML SEMÂNTICA) -->
+    <section>
+      <div class="section-title-wrap">
+        <span class="badge badge-primary">Investimento na sua Saúde</span>
+        <h1>Escolha o plano que combina com seu objetivo</h1>
+        <p>Sem taxas ocultas ou pegadinhas de cancelamento. Treine com liberdade e os melhores equipamentos.</p>
+      </div>
+
+      <!-- Tabela Comparativa de Preços e Benefícios -->
+      <div class="table-responsive">
+        <table class="styled-table" aria-label="Comparativo de Planos FitLife">
+          <thead>
+            <tr>
+              <th>Benefícios & Recursos</th>
+              <th>Plano Basic</th>
+              <th>Plano Fit (Mais Popular)</th>
+              <th>Plano Black VIP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Acesso à área de musculação</strong></td>
+              <td><span class="check-icon">✓</span> Incluso</td>
+              <td><span class="check-icon">✓</span> Incluso</td>
+              <td><span class="check-icon">✓</span> Incluso</td>
+            </tr>
+            <tr>
+              <td><strong>Aulas coletivas (Spinning, Pilates, Dança)</strong></td>
+              <td><span class="cross-icon">✕</span> Não incluso</td>
+              <td><span class="check-icon">✓</span> Ilimitado</td>
+              <td><span class="check-icon">✓</span> Ilimitado</td>
+            </tr>
+            <tr>
+              <td><strong>Avaliação física periódica</strong></td>
+              <td>A cada 6 meses</td>
+              <td>A cada 3 meses</td>
+              <td>Mensal com Bioimpedância</td>
+            </tr>
+            <tr>
+              <td><strong>Acesso a todas as unidades do país</strong></td>
+              <td><span class="cross-icon">✕</span> Apenas unidade fixa</td>
+              <td><span class="cross-icon">✕</span> Apenas unidade fixa</td>
+              <td><span class="check-icon">✓</span> Todas as filiais</td>
+            </tr>
+            <tr>
+              <td><strong>Cadeira de massagem e SPA pós-treino</strong></td>
+              <td><span class="cross-icon">✕</span> Não incluso</td>
+              <td><span class="cross-icon">✕</span> Não incluso</td>
+              <td><span class="check-icon">✓</span> Incluso</td>
+            </tr>
+            <tr>
+              <td><strong>Levar 1 amigo para treinar junto</strong></td>
+              <td><span class="cross-icon">✕</span> Não incluso</td>
+              <td>1x por mês</td>
+              <td>4x por mês (1x por semana)</td>
+            </tr>
+            <tr>
+              <td><strong>Investimento Mensal</strong></td>
+              <td><strong style="font-size: 1.2rem; color: var(--text-main);">R$ 89,90</strong></td>
+              <td><strong style="font-size: 1.2rem; color: var(--primary-color);">R$ 119,90</strong></td>
+              <td><strong style="font-size: 1.2rem; color: var(--secondary-color);">R$ 169,90</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Adesão Online</strong></td>
+              <td><a href="contato.html" class="btn btn-secondary" style="padding: 0.5rem 1rem;">Assinar</a></td>
+              <td><a href="contato.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Assinar Plano Fit</a></td>
+              <td><a href="contato.html" class="btn btn-secondary" style="padding: 0.5rem 1rem;">Assinar VIP</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: GRADE DE HORÁRIOS COM FILTRO JAVASCRIPT DINÂMICO -->
+    <section style="margin-top: 4rem;">
+      <div class="section-title-wrap">
+        <span class="badge badge-success">Programação Semanal</span>
+        <h2>Grade de Aulas Coletivas</h2>
+        <p>Use os filtros abaixo para encontrar o melhor horário para a sua rotina diária.</p>
+      </div>
+
+      <!-- Filtros em JavaScript com Ícones Vetoriais Sutis -->
+      <div class="table-filters" role="group" aria-label="Filtrar aulas por período">
+        <button class="filter-btn active" data-filter="all">Todas as Aulas</button>
+        <button class="filter-btn" data-filter="manha">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:-1px; margin-right:4px;"><path d="M12 2v6M4.93 10.93l4.24-4.24M2 18h20M20 18a8 8 0 1 0-16 0"></path></svg>Turno Manhã (06h - 12h)
+        </button>
+        <button class="filter-btn" data-filter="tarde">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:-1px; margin-right:4px;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>Turno Tarde (12h - 18h)
+        </button>
+        <button class="filter-btn" data-filter="noite">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:-1px; margin-right:4px;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>Turno Noite (18h - 22h)
+        </button>
+      </div>
+
+      <p id="classesCount" style="text-align: center; font-size: 0.9rem; font-weight: 600; color: var(--primary-color); margin-bottom: 1rem;">
+        Exibindo todas as aulas disponíveis
+      </p>
+
+      <!-- Tabela com identificadores data-period para o JavaScript -->
+      <div class="table-responsive">
+        <table class="styled-table" aria-label="Grade de Horários da Academia">
+          <thead>
+            <tr>
+              <th>Horário</th>
+              <th>Modalidade</th>
+              <th>Instrutor(a)</th>
+              <th>Sala / Local</th>
+              <th>Intensidade</th>
+              <th>Período</th>
+            </tr>
+          </thead>
+          <tbody id="scheduleTableBody">
+            <tr data-period="manha">
+              <td><strong>06:30 - 07:15</strong></td>
+              <td>Spinning Indoor</td>
+              <td>Prof. Carlos Silva</td>
+              <td>Sala de Bike 01</td>
+              <td><span class="badge badge-warning">Alta</span></td>
+              <td>Manhã</td>
+            </tr>
+            <tr data-period="manha">
+              <td><strong>08:00 - 09:00</strong></td>
+              <td>Yoga & Respiração</td>
+              <td>Profª. Juliana Martins</td>
+              <td>Sala Zen 02</td>
+              <td><span class="badge badge-success">Leve</span></td>
+              <td>Manhã</td>
+            </tr>
+            <tr data-period="manha">
+              <td><strong>10:00 - 11:00</strong></td>
+              <td>Pilates de Solo</td>
+              <td>Profª. Renata Souza</td>
+              <td>Sala Zen 02</td>
+              <td><span class="badge badge-primary">Moderada</span></td>
+              <td>Manhã</td>
+            </tr>
+            <tr data-period="tarde">
+              <td><strong>12:15 - 13:00</strong></td>
+              <td>HIIT Express (Pausa Almoço)</td>
+              <td>Prof. Felipe Ramos</td>
+              <td>Box Funcional</td>
+              <td><span class="badge badge-warning">Alta</span></td>
+              <td>Tarde</td>
+            </tr>
+            <tr data-period="tarde">
+              <td><strong>15:00 - 16:00</strong></td>
+              <td>Alongamento Ativo</td>
+              <td>Profª. Amanda Costa</td>
+              <td>Sala Zen 02</td>
+              <td><span class="badge badge-success">Leve</span></td>
+              <td>Tarde</td>
+            </tr>
+            <tr data-period="tarde">
+              <td><strong>17:00 - 18:00</strong></td>
+              <td>Cross Training Iniciante</td>
+              <td>Prof. Lucas Rocha</td>
+              <td>Box Funcional</td>
+              <td><span class="badge badge-primary">Moderada</span></td>
+              <td>Tarde</td>
+            </tr>
+            <tr data-period="noite">
+              <td><strong>18:30 - 19:30</strong></td>
+              <td>Cross Training Avançado</td>
+              <td>Prof. Lucas Rocha</td>
+              <td>Box Funcional</td>
+              <td><span class="badge badge-warning">Alta</span></td>
+              <td>Noite</td>
+            </tr>
+            <tr data-period="noite">
+              <td><strong>19:30 - 20:30</strong></td>
+              <td>Zumba & Ritmos</td>
+              <td>Profª. Camila Lima</td>
+              <td>Sala de Dança 03</td>
+              <td><span class="badge badge-primary">Moderada</span></td>
+              <td>Noite</td>
+            </tr>
+            <tr data-period="noite">
+              <td><strong>20:45 - 21:30</strong></td>
+              <td>Spinning Noturno</td>
+              <td>Prof. Carlos Silva</td>
+              <td>Sala de Bike 01</td>
+              <td><span class="badge badge-warning">Alta</span></td>
+              <td>Noite</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 1rem;" aria-label="FitLife">
+            <img src="assets/favicon.svg" alt="Ícone FitLife" class="logo-icon-img">
+            <span class="logo-brand">Fit<span class="logo-highlight">Life</span></span>
+          </a>
+          <p>Projeto acadêmico com HTML5 semântico, estilização com CSS moderno e filtros interativos com JavaScript manipulando o DOM.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="planos.html">Planos & Grade</a></li>
+            <li><a href="contato.html">Matrícula & Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Dúvidas Comuns</h4>
+          <ul class="footer-links">
+            <li><a href="contato.html#faq-pagamento">Formas de Pagamento</a></li>
+            <li><a href="contato.html#faq-cancelamento">Cancelamento e Regras</a></li>
+            <li><a href="contato.html#faq-experimental">Agendar Aula Grátis</a></li>
+            <li><a href="contato.html#faq-atestado">Atestado Médico</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Dados do Projeto</h4>
+          <p><strong>Disciplina:</strong> Desenvolvimento Web</p>
+          <p><strong>Trabalho:</strong> Desenvolvimento de Site em Dupla</p>
+          <p><strong>Tecnologias:</strong> HTML5, CSS3 & JavaScript</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> FitLife Academia. Todos os direitos reservados.</p>
+        <p>Desenvolvido para entrega do Trabalho Prático de Desenvolvimento Web.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/planos.js"></script>
+</body>
+</html>

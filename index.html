@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitLife - Sua academia completa para saúde, treino e bem-estar. Venha transformar sua vida!">
+  <title>FitLife | Academia & Bem-Estar</title>
+  
+  <!-- Favicon Personalizado -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  
+  <!-- Fontes do Google (Poppins e Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Folha de Estilos Principal -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO E NAVEGAÇÃO PRINCIPAL -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="Página Inicial FitLife">
+        <img src="assets/favicon.svg" alt="Ícone FitLife" class="logo-icon-img">
+        <span class="logo-brand">Fit<span class="logo-highlight">Life</span></span>
+      </a>
+
+      <!-- Menu de Navegação -->
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Início</a></li>
+          <li><a href="planos.html" class="nav-link">Planos & Aulas</a></li>
+          <li><a href="contato.html" class="nav-link">Matrícula & Contato</a></li>
+          <li><a href="contato.html#duvidas-frequentes" class="nav-link">Dúvidas (FAQ)</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ações do Cabeçalho: Alternar Tema & Hambúrguer -->
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Alternar tema claro/escuro">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <span>Escuro</span>
+        </button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <!-- SEÇÃO HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="badge badge-primary">Academia de Alta Performance</span>
+          <h1>Supere seus limites e conquiste sua <span>melhor versão</span></h1>
+          <p class="hero-lead">
+            Ambiente climatizado, equipamentos de ponta, acompanhamento profissional e aulas coletivas dinâmicas para você atingir seus objetivos de saúde e estética.
+          </p>
+          <div class="hero-buttons">
+            <a href="contato.html" class="btn btn-primary">Comece Agora (Aula Grátis)</a>
+            <a href="planos.html" class="btn btn-secondary">Conheça Nossos Planos</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>+1.500</h4>
+              <p>Alunos Ativos</p>
+            </div>
+            <div class="stat-item">
+              <h4>25+</h4>
+              <p>Instrutores Certificados</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Foco no seu Bem-Estar</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" 
+               alt="Pessoas treinando musculação e fitness na academia FitLife" 
+               class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE NÓS -->
+    <section class="about-section">
+      <div class="container about-wrapper">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80" 
+               alt="Estrutura moderna da academia com esteiras e aparelhos" 
+               loading="lazy">
+        </div>
+        <div class="about-text">
+          <span class="badge badge-success">Por que a FitLife?</span>
+          <h2>Muito mais do que apenas puxar peso</h2>
+          <p>
+            Fundada com o propósito de democratizar o bem-estar físico e mental, a FitLife combina metodologia científica, atendimento humanizado e infraestrutura completa.
+          </p>
+          <p>
+            Aqui você conta com planos personalizados de treino, esteiras conectadas, vestiários com duchas privativas e um ecossistema que motiva você diariamente.
+          </p>
+          <ul class="feature-list">
+            <li>Avaliação física biométrica computadorizada periódica;</li>
+            <li>Professores presentes em todos os turnos para ajustes posturais;</li>
+            <li>Acesso liberado a todas as unidades sem burocracia;</li>
+            <li>Aplicativo exclusivo para acompanhar sua evolução de cargas e metas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE MODALIDADES (CSS GRID) -->
+    <section class="container">
+      <div class="section-title-wrap">
+        <span class="badge badge-primary">Variedade de Treinos</span>
+        <h2>Encontre a modalidade ideal para o seu ritmo</h2>
+        <p>Desenvolvemos aulas dinâmicas para todos os níveis de condicionamento, desde quem está começando até atletas avançados.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=500&q=80" alt="Área de musculação com halteres" class="card-img" loading="lazy">
+          <span class="badge badge-primary">Força & Definição</span>
+          <h3>Musculação</h3>
+          <p>Aparelhos ergonômicos e pesos livres para ganho de massa magra, perda de gordura e fortalecimento articular.</p>
+          <a href="planos.html" class="card-link">Ver horários →</a>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=500&q=80" alt="Aula de pilates e flexibilidade" class="card-img" loading="lazy">
+          <span class="badge badge-success">Mente & Corpo</span>
+          <h3>Pilates & Yoga</h3>
+          <p>Aulas focadas em postura, respiração, flexibilidade e fortalecimento do core para redução de estresse.</p>
+          <a href="planos.html" class="card-link">Ver horários →</a>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80" alt="Pessoa pulando corda em treino funcional" class="card-img" loading="lazy">
+          <span class="badge badge-warning">Alta Intensidade</span>
+          <h3>Cross Training</h3>
+          <p>Treinamento funcional em circuito para queima calórica acelerada, agilidade e condicionamento cardiovascular.</p>
+          <a href="planos.html" class="card-link">Ver horários →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SEÇÃO INTERATIVA COM JAVASCRIPT: CALCULADORA DE IMC -->
+    <section class="imc-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="badge badge-warning">Ferramenta Interativa 1</span>
+          <h2>Calcule seu Índice de Massa Corporal (IMC)</h2>
+          <p>O IMC é uma métrica padrão recomendada pela Organização Mundial da Saúde para verificar sua faixa de peso corporal.</p>
+        </div>
+
+        <div class="imc-card">
+          <!-- Formulário do IMC -->
+          <form id="formImc" class="imc-form">
+            <div class="form-group">
+              <label for="imcPeso">Seu Peso (em kg):</label>
+              <input type="number" id="imcPeso" placeholder="Ex: 72.5" step="0.1" min="1" max="400" required>
+            </div>
+
+            <div class="form-group">
+              <label for="imcAltura">Sua Altura (em metros ou centímetros):</label>
+              <input type="number" id="imcAltura" placeholder="Ex: 1.75 ou 175" step="0.01" min="0.5" max="250" required>
+            </div>
+
+            <div class="form-group">
+              <label for="imcSexo">Sexo Biológico:</label>
+              <select id="imcSexo">
+                <option value="f">Feminino</option>
+                <option value="m">Masculino</option>
+              </select>
+            </div>
+
+            <div style="display: flex; gap: 0.75rem;">
+              <button type="submit" class="btn btn-primary" style="flex: 1;">Calcular IMC</button>
+              <button type="button" id="btnLimparImc" class="btn btn-secondary">Limpar</button>
+            </div>
+          </form>
+
+          <!-- Resultado Dinâmico Manipulado pelo DOM via JavaScript -->
+          <div class="imc-result-box" aria-live="polite">
+            <small style="text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); font-weight: 600;">Seu Resultado</small>
+            <div class="imc-value" id="imcValue">--</div>
+            <div class="imc-status" id="imcStatus">Informe seus dados ao lado</div>
+            <p class="imc-tip" id="imcTip">O resultado do seu IMC aparecerá aqui com recomendações personalizadas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO INTERATIVA COM JAVASCRIPT: QUIZ DE RECOMENDAÇÃO DE MODALIDADE -->
+    <section class="quiz-section" id="quiz-modalidade">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="badge badge-primary">Descubra seu Perfil</span>
+          <h2>Qual Modalidade Combina com Você?</h2>
+          <p>Responda a 3 perguntas rápidas e nosso sistema indicará o treino perfeito para o seu estilo de vida e objetivos.</p>
+        </div>
+
+        <div class="quiz-card">
+          <!-- Barra de Progresso do Quiz -->
+          <div class="quiz-progress-bar" aria-label="Progresso do questionário">
+            <div class="quiz-progress-fill" id="quizProgressFill"></div>
+          </div>
+
+          <!-- PERGUNTA 1 -->
+          <div class="quiz-step active" id="quizStep0">
+            <h3 class="quiz-question-title">1 de 3: Qual é o seu principal foco agora?</h3>
+            <div class="quiz-options-grid">
+              <button type="button" class="quiz-option-btn" data-score="musculacao">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><path d="M6 5v14M18 5v14M3 9v6M21 9v6M6 12h12M4 7h2M4 17h2M18 7h2M18 17h2"></path></svg>
+                </span>
+                <span class="quiz-option-text">
+                  Ganhar massa magra e tônus muscular
+                  <small>Foco em progressão de cargas, postura e definição estética</small>
+                </span>
+              </button>
+              <button type="button" class="quiz-option-btn" data-score="spinning">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+                </span>
+                <span class="quiz-option-text">
+                  Emagrecer com alta queima calórica e energia
+                  <small>Gasto energético acelerado, música contagiante e ritmo</small>
+                </span>
+              </button>
+              <button type="button" class="quiz-option-btn" data-score="cross">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </span>
+                <span class="quiz-option-text">
+                  Superar limites, agilidade e condicionamento extremo
+                  <small>Treinos funcionais dinâmicos e desafios diários em equipe</small>
+                </span>
+              </button>
+              <button type="button" class="quiz-option-btn" data-score="pilates">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v10M8 12h8"></path></svg>
+                </span>
+                <span class="quiz-option-text">
+                  Aliviar dores nas costas, estresse e ganhar flexibilidade
+                  <small>Conexão entre respiração, alinhamento postural e relaxamento</small>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- PERGUNTA 2 -->
+          <div class="quiz-step" id="quizStep1">
+            <h3 class="quiz-question-title">2 de 3: Em qual ambiente você se sente mais motivado(a)?</h3>
+            <div class="quiz-options-grid">
+              <button type="button" class="quiz-option-btn" data-score="musculacao">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                </span>
+                <span class="quiz-option-text">
+                  No meu próprio ritmo, focado nos meus fones de ouvido
+                  <small>Gosto de controlar cada repetição e acompanhar minhas cargas</small>
+                </span>
+              </button>
+              <button type="button" class="quiz-option-btn" data-score="spinning">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="3.5"></circle><circle cx="18.5" cy="17.5" r="3.5"></circle><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5L9 12l3-3 3 4.5M12 9l4-3h3"></path></svg>
+                </span>
+                <span class="quiz-option-text">
+                  Em uma sala climatizada com jogos de luzes e som alto
+                  <small>A energia coletiva da turma me faz pedalar muito mais</small>
+                </span>
+              </button>
+              <button type="button" class="quiz-option-btn" data-score="cross">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </span>
+                <span class="quiz-option-text">
+                  Em um box aberto, vibrando e incentivando os colegas de treino
+                  <small>Gosto de espírito de equipe e superação conjunta</small>
+                </span>
+              </button>
+              <button type="button" class="quiz-option-btn" data-score="pilates">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
+                </span>
+                <span class="quiz-option-text">
+                  Em um espaço calmo, silencioso e acolhedor
+                  <small>Menos barulho, movimentos fluidos e foco na respiração</small>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- PERGUNTA 3 -->
+          <div class="quiz-step" id="quizStep2">
+            <h3 class="quiz-question-title">3 de 3: Quanto tempo por dia você pretende se dedicar?</h3>
+            <div class="quiz-options-grid">
+              <button type="button" class="quiz-option-btn" data-score="spinning">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </span>
+                <span class="quiz-option-text">
+                  45 minutos diretos e intensos (Tenho a rotina corrida)
+                  <small>Quero entrar, suar a camisa com tudo e seguir meu dia</small>
+                </span>
+              </button>
+              <button type="button" class="quiz-option-btn" data-score="cross">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </span>
+                <span class="quiz-option-text">
+                  50 minutos em circuito variado sem rotina fixa
+                  <small>Cada dia um treino diferente para nunca enjoar</small>
+                </span>
+              </button>
+              <button type="button" class="quiz-option-btn" data-score="musculacao">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </span>
+                <span class="quiz-option-text">
+                  60 minutos completos entre pesos e esteira
+                  <small>Tempo ideal para aquecer, treinar e alongar com calma</small>
+                </span>
+              </button>
+              <button type="button" class="quiz-option-btn" data-score="pilates">
+                <span class="quiz-option-icon">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </span>
+                <span class="quiz-option-text">
+                  50 a 60 minutos de atenção corporal e relaxamento
+                  <small>Mais do que queimar calorias, quero sair renovado(a)</small>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- PASSO 4: RESULTADO PERSONALIZADO GERADO POR JS -->
+          <div class="quiz-step" id="quizStepResult">
+            <div class="quiz-result-box" aria-live="polite">
+              <div class="quiz-result-badge" id="resultIcon">
+                <svg viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H8c-.55 0-1 .45-1 1v1h10v-1c0-.55-.45-1-1-1h-1c-.55 0-1-.45-1-1v-2.34"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+              </div>
+              <span class="badge badge-success" id="resultBadge" style="margin-bottom: 0.75rem;">Compatibilidade Máxima</span>
+              <h3 class="quiz-result-title" id="resultTitle">Modalidade Sugerida</h3>
+              <p class="quiz-result-desc" id="resultDesc">Calculando...</p>
+              
+              <div class="quiz-result-tags" id="resultTags"></div>
+
+              <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="contato.html" id="resultCtaBtn" class="btn btn-primary" style="padding: 0.85rem 1.75rem;">
+                  Agendar Aula Grátis Nesta Modalidade
+                </a>
+                <button type="button" id="quizRestart" class="btn btn-secondary">
+                  ↺ Refazer Teste
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ COMPLETO -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 1rem;" aria-label="FitLife">
+            <img src="assets/favicon.svg" alt="Ícone FitLife" class="logo-icon-img">
+            <span class="logo-brand">Fit<span class="logo-highlight">Life</span></span>
+          </a>
+          <p>Projeto prático desenvolvido para avaliação acadêmica em Desenvolvimento Web com HTML5 semântico, CSS3 e JavaScript puro.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="planos.html">Planos & Grade</a></li>
+            <li><a href="contato.html">Matrícula & Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Dúvidas Comuns</h4>
+          <ul class="footer-links">
+            <li><a href="contato.html#faq-pagamento">Formas de Pagamento</a></li>
+            <li><a href="contato.html#faq-cancelamento">Cancelamento e Regras</a></li>
+            <li><a href="contato.html#faq-experimental">Aula Experimental Grátis</a></li>
+            <li><a href="contato.html#faq-atestado">Atestado Médico</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Dados do Projeto</h4>
+          <p><strong>Disciplina:</strong> Desenvolvimento Web</p>
+          <p><strong>Trabalho:</strong> Desenvolvimento de Site em Dupla</p>
+          <p><strong>Tecnologias:</strong> HTML5, CSS3 & JavaScript</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> FitLife Academia. Todos os direitos reservados.</p>
+        <p>Desenvolvido com foco em código limpo, semântica e acessibilidade.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/imc.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

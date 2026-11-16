@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" role="img" aria-label="FitLife Logo">
+  <defs>
+    <!-- Gradiente principal vibrante (Azul a Verde Esmeralda) -->
+    <linearGradient id="fitlife-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Sombra suave para o ícone -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#0ea5e9" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- SÍMBOLO DA MARCA (Ícone: Força + Energia + Vitalidade) -->
+  <g transform="translate(6, 6)" filter="url(#glow)">
+    <!-- Base / Escudo arredondado -->
+    <rect x="0" y="0" width="48" height="48" rx="14" fill="url(#fitlife-grad)"/>
+
+    <!-- Haltere estilizado combinado com raio de energia -->
+    <!-- Barra central do haltere -->
+    <rect x="15" y="22" width="18" height="4" rx="2" fill="#ffffff" opacity="0.95"/>
+    <!-- Anilha esquerda -->
+    <rect x="11" y="16" width="4" height="16" rx="2" fill="#ffffff"/>
+    <rect x="7" y="19" width="3" height="10" rx="1.5" fill="#ffffff" opacity="0.8"/>
+    <!-- Anilha direita -->
+    <rect x="33" y="16" width="4" height="16" rx="2" fill="#ffffff"/>
+    <rect x="38" y="19" width="3" height="10" rx="1.5" fill="#ffffff" opacity="0.8"/>
+    
+    <!-- Raio de energia diagonal sobreposto -->
+    <path d="M 27 10 L 19 25 L 25 25 L 21 38 L 31 23 L 25 23 Z" fill="#facc15" stroke="#ffffff" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- TEXTO DA LOGO (FitLife) -->
+  <g transform="translate(64, 38)">
+    <!-- "Fit" em azul escuro / branco dinâmico -->
+    <text x="0" y="0" font-family="'Poppins', sans-serif" font-size="28" font-weight="800" fill="currentColor" letter-spacing="-0.5">Fit<tspan fill="url(#fitlife-grad)">Life</tspan></text>
+    
+    <!-- Subtítulo "ACADEMIA & SAÚDE" -->
+    <text x="2" y="12" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#64748b" letter-spacing="2.5" text-transform="uppercase">ACADEMIA &amp; SAÚDE</text>
+  </g>
+</svg>
