@@ -4,13 +4,6 @@
 
 ---
 
-## Identificação da Dupla
-* **Integrante 1:** [Nome do Aluno 1 / Matrícula]
-* **Integrante 2:** [Nome do Aluno 2 / Matrícula]
-* **Disciplina:** Desenvolvimento Web / Front-End
-
----
-
 ## Tema Escolhido: FitLife (Academia & Bem-Estar)
 Um portal web moderno para uma academia de alta performance, contendo apresentação institucional, comparativo de planos e grade de aulas, ferramentas interativas de saúde e formulário de pré-matrícula com validações completas.
 
